@@ -1,9 +1,10 @@
 import styles from "./Navbar.module.css";
+import logo from "../images/MA_logo_red_square_tagline.png";
 
 export default function Navbar () {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>LOGO</div>
+      <img className={styles.logo} src={logo} alt="Logo" />
       <div className={styles.right}>
         <button className={styles.link}>LOGIN / REGISTER</button>
         <span className={styles.divider}>|</span>
