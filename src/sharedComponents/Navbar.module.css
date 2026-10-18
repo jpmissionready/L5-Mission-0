@@ -1,3 +1,33 @@
-.navbar {
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
     background-color: red;
+}
+.logo 
+{
+    /* Will be an image of their logo */
+}
+.right 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.link 
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+.divider 
+{
+    font-size: 20px;
+}
+
+.menu 
+{
+    font-size: 24px;
+    cursor: pointer;
 }
