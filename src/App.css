@@ -1,5 +1,22 @@
-* {
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.cards 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px 150px;
+  justify-content: center;
+}
+/* 1023px 767px taken from medium.com */
+@media (max-width: 767px) 
+{
+  .cards 
+  {
+    padding: 20px;
+  }
 }

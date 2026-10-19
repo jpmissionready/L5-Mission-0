@@ -4,11 +4,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
-    /* background-color: red; */
+    position: absolute;
+    width: 100%;
+    z-index: 1;     
+    /* Hero is loaded after navbar hence Hero video would cover the Navbar. Needa re-arrange z-index so Navbar sits ontop of hero. */
 }
 .logo 
 {
     height: 100px;
+}
+.divLogo
+{
+    display: flex;
+    color: white;
+    align-items:end; 
+    gap: 10px;
+    font-size: 24px;
 }
 .right 
 {
@@ -16,18 +27,75 @@
     align-items: center;
     gap: 15px;
 }
+.right > button 
+{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+
+}
 .link 
 {
     font-size: 20px;
+    text-decoration: none;
     cursor: pointer;
+    padding: 8px 15px;
+    color: white;
+    background-color: red;
 }
-.divider 
-{
-    font-size: 20px;
-}
-
 .menu 
 {
-    font-size: 24px;
+    display: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 700;
     cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
 }
+
+
+/* 1023px 767px taken from medium.com */
+@media (max-width: 1023px) 
+{
+    .logo 
+    {
+        height: 80px;
+    }
+    .divLogo
+    {
+        font-size: 18px;
+    }
+}
+ 
+@media (max-width: 767px) 
+{
+    .logo 
+    {
+        height: 60px;
+    }
+    .divLogo
+    {
+        font-size: 12px;
+    }
+    .menu 
+    {
+        display: block;
+    }
+    .right 
+    {
+        display: none;
+    }
+    .open 
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        padding: 15px;
+        background-color: #707070;
+    }
+}
+ 
